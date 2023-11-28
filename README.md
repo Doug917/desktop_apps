@@ -2,7 +2,7 @@
 
 Simple office apps.
 
-nonscanned_pdf is an example of using python to scrape a pdf customer order
+pdf_to_xls_app is an example of using python to scrape a pdf customer order
 into an excel spreadsheet.
 
 excel_merge takes as input the paths to two excel files
