@@ -3,7 +3,9 @@
 Simple office apps.
 
 pdf_to_xls_app is an example of using python to scrape a pdf customer order
-into an excel spreadsheet.
+into an excel spreadsheet.  The regex code is specific to the particular
+customer order files I was scraping which have personal information and
+therefore are not included.
 
 excel_merge takes as input the paths to two excel files
 and merges them (inner join) on user-specified key columns.
