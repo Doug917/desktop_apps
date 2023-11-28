@@ -2,6 +2,9 @@
 
 Simple office apps.
 
+nonscanned_pdf is an example of using python to scrape a pdf customer order
+into an excel spreadsheet.
+
 excel_merge takes as input the paths to two excel files
 and merges them (inner join) on user-specified key columns.
 The application is an alternative to repeated using excel's
