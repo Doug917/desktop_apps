@@ -1,6 +1,6 @@
 # desktop_apps
 
-Simple office apps.
+Office apps.
 
 pdf_to_xls_app is an example of using python to scrape a pdf customer order
 into an excel spreadsheet.  The regex code is specific to the particular
