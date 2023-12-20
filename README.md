@@ -26,3 +26,7 @@ An order might be held for several reasons including:
 -overdue customer balance
 -holding for future delivery date.
 
+transparency_change takes png images in the same folder and reduces the
+image transparency on each.  I frequently print out screenshots from
+SAP windows, and this is to reduce ink used when printing.
+
