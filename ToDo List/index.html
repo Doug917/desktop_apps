@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+  </head>
+  <body>
+    <h3>Today's To Do List</h3>
+    <input type="text" id="list_item" size="100" placeholder="Type new item here or the item you want to remove.">
+    <button type="button" onclick="add_item()">Add Item</button>
+    <button type="button" onclick="remove_item()">Remove Item</button>
+    <button type="button" onclick="display_list()">Display Current List</button>
+    <button type="button" onclick="hide_list()">Hide List</button>
+    <ol class="displayed_list">
+
+    </ol>
+	<script>
+        document.getElementById("list_item").focus();
+        var my_list = [];
+        var output = document.querySelector(".displayed_list");
+        var input = document.getElementById("list_item");
+        function add_item() {
+            input.focus();
+            my_list.push(input.value);
+            input.value = "";
+        }
+        function display_list() {
+            input.focus();
+            output.innerHTML = "";
+            for (let item of my_list) {
+                output.innerHTML += ("<li>"+item+"</li>");
+            }
+        }
+        function hide_list() {
+            input.focus();
+            input.value = "";
+            output.innerHTML = "";
+        }
+        function remove_item() {
+            input.focus();
+            var item_to_remove = input.value;
+            var i = 0;
+            for (let item of my_list) {
+                if (item === item_to_remove) {
+                    my_list.splice(i, 1);
+                    break;
+                }
+                i++;
+            }
+            input.value = "";
+        }
+    </script>
+  </body>
+</html>
