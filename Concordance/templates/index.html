@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concordance</title>
+</head>
+<body>
+    <h1>Enter a phrase below</h1>
+    <form method="post" action = '/'>
+        <label>Phrase</label>
+        <input type="text" id="phrase" name="phrase">
+        <label>Limit number of results to</label>
+        <input type="text" id="num_results" name="num_results">
+        <input type="submit" name='submit' value="Submit">
+    </form>
+    <ol>
+        {% for line in results %}
+        <li>{{ line }}</li>
+        {% endfor %}
+    </ol>
+    {% if count < num_results %}
+    <h3>Total results: {{ count }}</h3>
+    {% endif %}
+</body>
+</html>
